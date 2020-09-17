@@ -31,18 +31,18 @@ outline: 1px solid rgb(235, 230, 230);
 
 
 /* icons */
-.icon a{
+.icons a{
     color: black;
 }
-.icon{
+.icons{
     color: black;
 }
 a{
-    color:  hsl(9,100%,27%);
+    color: black;
 }
 
 a:hover{
-    color: #000;
+    color:  hsl(9,100%,27%);
 }
 
 /* paragraph text for all the pages and sections */
@@ -115,22 +115,7 @@ h4{
     font-weight: 900;
   }
 
- /*media icons */
-.icon{
-    display: inline-block;
-    font-size: 1.5em;
-    border: 1.5px solid white;
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
-    text-align: center;
-    padding-top: 2px;
-}
-  /* media icons */
-  .icon.mobile{
-    float: right;
-    color: white;
-  }
+
 
  /* burger navbar */
 .Bars{
@@ -157,6 +142,7 @@ h4{
     font-weight: 600;
     width: 60vw;
     padding: 10px;
+    margin-left: 15vw;
 }
   /* form section */
 .form-control{
@@ -168,8 +154,26 @@ h4{
    margin-bottom: 5vh;
 }
 
+hr{
+    border: black 1px solid;
+    width: 90vw;
+}
+
 /* footer section */
  /* footer text */
+
+ .icons{
+    display: inline-block;
+    font-size: 1.2em;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding-top: 7px;
+    color: black;
+    border: 1.5px solid black;
+ 
+}
 .CopyText{
     text-align: center;
     font-size: 14px;
