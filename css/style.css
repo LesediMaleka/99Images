@@ -1,0 +1,492 @@
+html{
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+body{
+    /* background-color: bisque; */
+    background-color: white;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(8, 2, 2);
+    overflow-x: hidden; 
+    overflow-y: hidden;
+}
+
+
+/* Scroll bar */
+body::-webkit-scrollbar {
+  width: 0.2em;
+}
+
+body::-webkit-scrollbar-thumb {
+background-color:   hsl(9,100%,27%);
+outline: 1px solid rgb(235, 230, 230);
+
+}
+
+
+/* iconss */
+.icons a{
+    color:hsl(9,100%,27%);
+}
+.icons{
+    color:hsl(9,100%,27%);
+}
+a{
+    color:  hsl(9,100%,27%);
+}
+
+a:hover{
+    color: #000;
+}
+
+/* paragraph text for all the pages and sections */
+p{
+    font-size: 14px;
+    font-weight: 250;
+    line-height: 18px;
+    text-align: left;
+    text-size-adjust: 2px;
+    margin: 20px;
+}
+
+
+/* Logo Div */
+.MediaDiv{
+        z-index: 20;
+    }
+/* Navbar for mobile*/
+.overlay{
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left:-100vw;
+    top: 0;
+    left: 0;
+    background-color: hsl(9,100%,27%);
+    color: rgb(12, 12, 12);
+    overflow: hidden; 
+    transition: 0.5s;
+  }
+
+.overlay-content ul{
+   list-style: none;
+ }
+
+  /* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%; 
+    text-align: center; 
+    margin-top: 30px; 
+}
+
+  /* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: black;
+    display: block; 
+    transition: 0.3s; 
+    font-size: 1.5em;
+}
+
+  /* Position the close button (top right corner) */ 
+.overlay .closebtn {
+    position: absolute;
+    right: 35px;
+    top: 10px;
+    /* color: black; */
+    font-weight: 900;
+  }
+
+ /*media iconss */
+.icons{
+    display: inline-block;
+    font-size: 1.5em;
+    border-radius: 50%;
+    border: solid 1px #eb5e28;
+    height: 40px;
+    width: 40px;
+    padding-top: 10px;
+    text-align: center;
+  
+    
+}
+
+/* bars and */
+.icon{
+    display: inline-block;
+    font-size: 2em;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    padding-top: 10px;
+    text-align: center;
+    color:black !important;
+  
+    
+}
+ 
+
+ /* burger navbar */
+.Bars{
+    margin-left: -5vw;
+    margin-top: 3vh;
+    
+}
+
+
+/* Desktop navbar section */
+.Desktop{
+    display: none;
+}
+
+.mobile-Nav{
+    display: block;
+    color: black;
+    /* position: fixed; */
+    z-index: 5;
+    background-color: hsl(9,100%,27%);
+   
+}
+/* Landing page section */
+.LandingPage{
+    width: 100vw;
+    padding: 0px !important;
+    margin:0px !important;
+}
+/* About section */
+.ThandoKunene{
+    margin-left: 20vw;
+}
+/* Vision and mission statement */
+
+ 
+/* Services section */
+.iconn{
+    margin-left: 45vw;
+    font-size: 2em;
+    }
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* get in touch section/page */
+.FormButton{
+    color: white;
+    background-color: hsl(9,100%,27%);
+    border-radius: 50px;
+    font-weight: 600;
+    width: 60vw;
+    padding: 10px;
+}
+  /* form section */
+.form-control{
+    background-color: rgb(209, 204, 204);
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+}
+.FormDiv{
+   margin-bottom: 5vh;
+}
+
+/* footer section */
+ /* footer text */
+.CopyText{
+    text-align: center;
+    font-size: 14px;
+}
+.FullName{
+    color:hsl(9,100%,27%);
+    font-weight: 30px;
+
+}
+.gallary-block{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.gallary-block .heading{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.gallary-block .heading h2{
+    font-weight: bold;
+    font-size: 1.4em;
+    text-transform: uppercase;
+}
+
+.gallary-block.compact-gallary .item{
+    overflow: hidden;
+    background: black;
+    margin-bottom: 0;
+    opacity:1;
+}
+.gallary-block.compact-gallary .item .imgages{
+    transition: 0.8s ease;
+}
+
+.gallary-block.compact-gallary .item .info{
+    position: relative;
+    display: inline-block;
+}
+
+.gallary-block.compact-gallary .item .description{
+    display: grid;
+    position: absolute;
+    left:0;
+    color: white;
+    bottom:0;
+    padding: 10px;
+    font-size: 17px;
+    line-height: 18px;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    opacity:1;
+    color: white;
+    transition: 0.8s ease;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.39));
+}
+
+.gallary-block.compact-gallary .item .description .description-heading{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.gallary-block.compact-gallary .item .description .description-body{
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 0.8em;
+}
+
+
+  /* --------------------------------------------------------------media queries */
+ 
+ /* // Extra small devices (portrait phones, less than 576px) */
+ /* // No media query for `xs` since this is the default in Bootstrap */
+ 
+ /* // -Small devices (landscape phones, 576px and up) */
+ @media (min-width: 576px) and (orientation: landscape) { 
+ 
+    .gallary-block.compact-gallary .item .description{
+        opacity: 0;
+
+    }
+    .gallary-block.compact-gallary .item .description:hover{
+        opacity: 1;
+    }
+    .gallary-block .zoom-on-hover:hover .image{
+        transform: scale(1.3);
+        opacity: 0.7;
+
+    }
+   
+}
+
+/* -Medium devices (tablets or ipad) */
+@media (min-width: 768px) {
+
+  /* burger navbar */
+.Bars, .closebtn{
+    margin-left: 5vw;
+    font-size: 4em;
+    margin-bottom: 5vh;
+  
+}
+
+/* About section */
+.ThandoKunene{
+    margin-left: 23vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+  /* Tagline section */
+ .Tagline p{
+   font-size: 5em;
+   animation: typing 2s steps(20, end) forwards; 
+   animation-delay: 1s;   
+}
+}
+
+/* -Large devices (ipad pro) */
+@media (min-width: 992px) { 
+
+ .mobile-only{
+     display: none;
+ }
+ .Desktop{
+ display: block;
+ color: rgb(212, 40, 40);
+ }  
+ .LogoImag{
+     padding: 10px;
+ }
+
+ /* hr line */
+.NameHrLine{
+    border-top: 1px solid #f7931e;
+    margin: 20px;
+}
+ /* navbar desktop */
+ #myNav{
+ display: none;
+ }
+ ul.desktop-nav{
+     list-style: none;
+     text-decoration: none;
+ }  
+ .LogoDesktopNavBar{
+     margin-bottom: 2vh;
+ } 
+ .IconsDesktopNavBar {
+    margin-top: -4vh;
+    margin-left: 72vw;
+} 
+  
+ /* desktop navbar */
+ .DesktopNavbar{
+   display: inline-block;
+ }
+ .nav-link{
+   color: rgb(216, 12, 12);
+   margin-left: 10px;
+   font-weight: 200;
+   font-size: 1.8em;
+ }
+ .nav-link:hover{
+     color: #f7931e;
+     text-shadow: 0 -1px 0 #eb5e28;
+ } 
+ 
+ /* Landing page section */
+ .CarouselImages{
+     height: 60vh !important;
+ }
+
+
+
+
+
+
+
+
+
+ /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+   /* Tagline section */
+   .TaglineDiv{
+     margin-top:5vh;
+   }
+
+ .contactInfo{
+   margin-top: 1vh;
+ }
+
+ .ContactDiv{
+   width: 15vw;
+   height: 22vh;
+ }
+ 
+ 
+ /* get in touch section/page */
+ .FormButton{
+ width: 20vw;
+ }
+ .FormDiv{
+ width: 80vw;
+ margin: auto;
+ text-align: center;
+ background: rgb(41, 40, 40); 
+ margin-bottom: 5vh;
+ }
+ 
+   
+}
+@media screen and (min-width: 1200px) {
+    
+ 
+/* Navbar section */
+.LogoDesktopNavBar{
+    margin-top: 2vh;
+    margin-left: -10vw;
+    width: 60% !important;
+} 
+.IconsDesktopNavBar {
+   margin-top: 6vh;
+   margin-left: 400px;
+} 
+ /* Landing page section */
+ .CarouselImages{
+    height: 80vh !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+ /* tagline section */
+  .Tagline p{
+   font-size: 8em;
+   animation: typing 3.5s steps(30, end) forwards; 
+   animation-delay: 1s;   
+}
+ .TaglinePara{
+   font-size: 0.9em;
+ }
+ 
+
+ 
+ /* get in touch section/page */
+ .FormButton{
+   width: 15vw;
+   }
+
+ 
+
+
+ 
+
+  }
+ 
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {}
