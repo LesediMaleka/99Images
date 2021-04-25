@@ -20,6 +20,7 @@ body{
 }
 
 
+
 /* Navbar for mobile*/
 .overlay{
     height: 100%;
@@ -123,11 +124,17 @@ body{
     color:hsl(9,100%,27%);
 }
 a{
-    color:  hsl(9,100%,27%);
+    color:  hsl(9,100%,27%) !important;
+ 
 }
 
 a:hover{
     color: #000;
+  
+}
+
+li{
+    text-decoration:none !important;
 }
  /*bars and close */
 .icons{
@@ -178,8 +185,49 @@ a:hover{
  /* Collection section*/
 .pic{
     width: 35vw;
-    height: 15vh;
-    margin-left: 5vw;
+    
+}
+/*  */
+
+.CollectionDiv{
+    margin: 0;
+    padding: 0;
+    margin-top: -16vh;
+    margin-bottom: 0;
+  }
+
+img.wp-smiley,img.emoji {
+    text-rendering: auto;
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+  .ImageDiv{
+      margin: 0;
+    padding: 0;
+    /* animation: slide 3.5s ease-in-out infinite; */
+  }
+@keyframes slide{
+    0% {align-items: stretch;
+    transform: rotateZ(180deg);}
+    50% {mask-image: url(../assests/images/five.jpg);
+    transform: translateX(50px);}
+    100%{ mask-image: url(../assests/images/logo.jpg);}
+}
+
+@keyframes move{
+    
+    0% {mask-image: url(../assests/images/five.jpg);
+    transform: translateX(-10px);}
+    50% {align-items: stretch;
+        transform: translateY(10px);}
+    100%{ mask-image: url(../assests/images/logo.jpg);}
 }
 
 /* contact section */
@@ -318,7 +366,14 @@ iframe{
     height: 20vh;
     margin-top: 2vh;
 }
+/* Collection page */
+.ImageDiv{
+    height: 10vw;
+}
 
+footer{
+    margin-top:8.9vh;
+}
    
 }
 @media screen and (min-width: 1200px) {
