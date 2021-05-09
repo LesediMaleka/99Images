@@ -31,7 +31,7 @@ body{
     left:-100vw;
     top: 0;
     left: 0;
-    background-color: hsl(9,100%,27%);
+    background-color: rgb(228, 126, 152);
     color: rgb(12, 12, 12);
     overflow: hidden; 
     transition: 0.5s;
@@ -124,7 +124,7 @@ body{
     color:hsl(9,100%,27%);
 }
 a{
-    color:  rgb(233, 53, 194) !important;
+    color:  hsl(9,100%,27%) !important;
  
 }
 
